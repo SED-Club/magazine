@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>SED</title>
+    <style>
+        body {
+            user-select: none;
+        }
+        html, body, footer {
+            font-family:'Times New Roman', Times, serif;
+        }
+        #sed-website {
+            background-image: url("SED _Background.png");
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.85
+        }
+        .btn {
+            color: white;
+            border-radius: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: white;
+            opacity: 0.70;
+            color: black;
+            border-radius: 50px;
+            text-decoration: underline;
+        }
+        .btn2 {
+            background-color: white;
+            color:black;
+            height: 30px;
+            border: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            justify-content: space-between;
+            gap:10px;
+        }
+        .btn2:hover {
+            background-color: white;
+            opacity: 0.70;
+            color:black;
+            text-decoration: underline;
+            justify-content: space-between;
+            gap:10px;
+        }
+        .topic {
+            color:white;
+            margin-left: 50px;
+            font-size: 30px
+        }
+        .detail {
+            color:white;
+            margin-left: 50px;
+        }
+        #detail2 {
+            color:black;
+            margin-left:70px;
+        }
+        @media (max-width:768px) {
+            .headline {
+                text-align: center;
+                font-size: 56.2px;
+                color:white
+            }
+            #sed-website {
+                background-image: url("SED _Background.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+            #logo {
+                width: 33.7px;
+            }
+            .btn {
+                color: white;
+                border-radius: 28px;
+                height: 28px;
+                background-color: transparent;
+                border: none;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            #button1 {
+                margin-left:562px;
+            }
+            #button2 {
+                margin-right:28px;
+            }
+            .btn:hover {
+                background-color: white;
+                opacity: 0.70;
+                color: black;
+                border-radius: 28px;
+                text-decoration: underline;
+            }
+            .btn2 {
+                background-color:white;
+                color: black;
+                border-radius: 16.87px;
+                border: none;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                justify-content: space-between;
+                gap: 5.62px;
+            }
+            .btn2:hover {
+                background-color: transparent;
+                opacity: 0.70;
+                color: white;
+                text-decoration: underline;
+                justify-content: space-between;
+                gap: 5.62px;
+            }
+            .section {
+                background-color: transparent;
+                border-radius: 28px;
+                text-align: left;
+                padding:11.2445px
+            }
+            .topic {
+                color:white;
+                margin-left: 28px;
+                font-size: 16.867px
+            }
+            .detail {
+                color:white;
+                margin-left: 28px;
+            }
+            #footer {
+                margin-top: 56.2px;
+            }
+            .detail2 {
+                color:black;
+                margin-left:39.4px;
+            }
+        }
+        @media (max-width: 480px) {
+            .headline {
+                text-align: center; font-size: 35.14px;color:white
+            }
+            #sed-website {
+                background-image: url("SED _Background.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+            #logo {
+                width: 21.1px;
+            }
+            .btn{
+                color: white;
+                border-radius: 17.6px;
+                height: 17.6px;
+                background-color: transparent;
+                border: none;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            .btn:hover {
+                background-color: white;
+                opacity: 0.70;
+                color: black;
+                border-radius: 17.6px;
+                text-decoration: underline;
+            }
+            .btn2{
+                color: black;
+                height: 10.542px;
+                background-color: white;
+                border: none;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                justify-content: space-between;
+                gap: 3.51px;
+            }
+            .btn2:hover {
+                background-color: transparent;
+                opacity: 0.70;
+                color: white;
+                text-decoration: underline;
+                justify-content: space-between;
+                gap: 3.51px;
+            }
+            #button1 {
+                margin-left: 351.4px;
+            }
+            #button2 {
+                margin-right:17.6px;
+            }
+            .section{
+                background-color: transparent;
+                border-radius: 17.6px; 
+                text-align: left;
+                padding:7.03px;
+            }
+            .topic {
+                color:white;
+                margin-left: 17.6px;
+                font-size: 10.542px
+            }
+            .detail {
+                color:white;
+                margin-left: 17.6px;
+            }
+            #footer {
+                margin-top:35.14px;
+            }
+            .detail2 {
+                color:black;
+                margin-left:24.6px;
+            }
+        }
+    </style>
+</head>
+<body id="sed-website">
+    <nav style="background-color: transparent;">
+        <ul>
+            <div>
+                <a href=""><button id="logo"style="background-color: transparent; border:none;"><img src="SED_Logo__2.png" style="width: 60px"></button></a>
+                <a href=""><button class="btn" id="button1" style="margin-left: 1000px;">SED Magazine</button></a>
+                <a href=""><button class="btn">SED Research Team</button></a>
+                <a href="https://forms.gle/96jAWVPwLzkKpZC38"><button class="btn">Contact</button></a>
+                <a href="https://forms.gle/Gyx4p3jAEtJmvpwx7"><button class="btn" id="button2" style=" margin-right:50px;">Join</button></a>
+            <div>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="headline"style="text-align: center; font-size: 100px;color:white">Curiosite</h1>
+        <div class="section" style="background-color: transparent; border-radius: 50px; text-align: left; padding:20px">
+                <h2 class="topic">Curiosite</h2>
+                <p class="detail">Curiosite is a monthly science magazine created by SED Magazine Team ,which is lead by Idam Suh and Aayushi Maurya, since August, 2025.</p>
+        </div>
+        <div>
+            <a href="https://online.fliphtml5.com/sed-scienceclub/zqbz/"><button class="btn2" id="detail2">Issue 1(August)</button></a>
+            <a href="https://online.fliphtml5.com/sed-scienceclub/annq/"><button class="btn2">Issue 2(September)</button></a>
+            <a href="https://online.fliphtml5.com/sed-scienceclub/ixwe/"><button class="btn2">Issue 3(October)</button></a>
+        </div>
+    </main>
+    <footer style="margin-top: 100px;">
+        <p style="color: white; text-align: center;">&copy; SED 2025. All rights reserved.If you have any questions/suggestions about the club, please click contact menu in the headline.</p>
+    </footer>
+</body>
+</html>
