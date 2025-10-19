@@ -5,217 +5,167 @@
     <title>SED</title>
     <style>
         body {
-            user-select: none;
-        }
-        html, body, footer {
-            font-family:'Times New Roman', Times, serif;
+          user-select: none;
+          font-family: 'Times New Roman', Times, serif;
+          margin: 0;
+          padding: 0;
         }
         #sed-website {
-            background-image: url("SED _Background.png");
-            background-size: cover;
-            background-position: center center;
-            opacity: 0.85
+          background-image: url("SED _Background.png");
+          background-size: cover;
+          background-position: center center;
+          opacity: 0.85;
+        }
+        .buttons-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 15px;
+          margin-top: 1.5rem;
         }
         .btn {
-            color: white;
-            border-radius: 50px;
-            height: 50px;
-            background-color: transparent;
-            border: none;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: bold;
+          color: white;
+          border-radius: 50px;
+          height: 50px;
+          padding: 0 30px;
+          background-color: transparent;
+          border: none;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bold;
+          cursor: pointer;
+          transition: all 0.3s ease;
         }
         .btn:hover {
-            background-color: white;
-            opacity: 0.70;
-            color: black;
-            border-radius: 50px;
-            text-decoration: underline;
+          background-color: white;
+          opacity: 0.7;
+          color: black;
+          text-decoration: underline;
         }
         .btn2 {
-            background-color: white;
-            color:black;
-            height: 30px;
-            border: none;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: bold;
-            justify-content: space-between;
-            gap:10px;
+          background-color: white;
+          color: black;
+          height: 30px;
+          border: none;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bold;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          padding: 0 15px;
+          border-radius: 15px;
+          cursor: pointer;
+          transition: all 0.3s ease;
         }
         .btn2:hover {
-            background-color: white;
-            opacity: 0.70;
-            color:black;
-            text-decoration: underline;
-            justify-content: space-between;
-            gap:10px;
+          background-color: white;
+          opacity: 0.7;
+          color: black;
+          text-decoration: underline;
+        }
+        .section {
+          background-color: transparent;
+          border-radius: 20px;
+          text-align: left;
+          padding: 1.5rem;
+          max-width: 90%;
+          width: 90%;
+          margin: 0 auto;
         }
         .topic {
-            color:white;
-            margin-left: 50px;
-            font-size: 30px
+          color: white;
+          font-size: 30px;
+          margin: 1rem auto;
+          max-width: 95%;
         }
         .detail {
-            color:white;
-            margin-left: 50px;
+          color: white;
+          margin: 0.8rem auto;
+          max-width: 95%;
+          line-height: 1.6;
         }
         #detail2 {
-            color:black;
-            margin-left:70px;
+          color: black;
+          margin: 0.8rem auto;
+          max-width: 90%;
         }
-        @media (max-width:768px) {
-            .headline {
-                text-align: center;
-                font-size: 56.2px;
-                color:white
-            }
-            #sed-website {
-                background-image: url("SED _Background.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-            }
-            #logo {
-                width: 33.7px;
-            }
-            .btn {
-                color: white;
-                border-radius: 28px;
-                height: 28px;
-                background-color: transparent;
-                border: none;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: bold;
-            }
-            #button1 {
-                margin-left:562px;
-            }
-            #button2 {
-                margin-right:28px;
-            }
-            .btn:hover {
-                background-color: white;
-                opacity: 0.70;
-                color: black;
-                border-radius: 28px;
-                text-decoration: underline;
-            }
-            .btn2 {
-                background-color:white;
-                color: black;
-                border-radius: 16.87px;
-                border: none;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: bold;
-                justify-content: space-between;
-                gap: 5.62px;
-            }
-            .btn2:hover {
-                background-color: transparent;
-                opacity: 0.70;
-                color: white;
-                text-decoration: underline;
-                justify-content: space-between;
-                gap: 5.62px;
-            }
-            .section {
-                background-color: transparent;
-                border-radius: 28px;
-                text-align: left;
-                padding:11.2445px
-            }
-            .topic {
-                color:white;
-                margin-left: 28px;
-                font-size: 16.867px
-            }
-            .detail {
-                color:white;
-                margin-left: 28px;
-            }
-            #footer {
-                margin-top: 56.2px;
-            }
-            .detail2 {
-                color:black;
-                margin-left:39.4px;
-            }
+        #footer {
+          margin-top: 4rem;
+        }
+        @media (max-width: 768px) {
+          .headline {
+            text-align: center;
+            font-size: 2.5rem;
+            color: white;
+          }
+          #logo {
+            width: 34px;
+          }
+          .section {
+            max-width: 95%;
+            padding: 1rem;
+          }
+          .topic {
+            font-size: 20px;
+            max-width: 95%;
+          }
+          .detail {
+            max-width: 95%;
+          }
+          .btn {
+            height: 40px;
+            border-radius: 25px;
+            padding: 0 20px;
+          }
+          .btn2 {
+            height: 25px;
+            border-radius: 15px;
+            padding: 0 10px;
+            gap: 6px;
+          }
+          .buttons-container {
+            gap: 10px;
+          }
+          #footer {
+            margin-top: 3rem;
+          }
         }
         @media (max-width: 480px) {
-            .headline {
-                text-align: center; font-size: 35.14px;color:white
-            }
-            #sed-website {
-                background-image: url("SED _Background.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-            }
-            #logo {
-                width: 21.1px;
-            }
-            .btn{
-                color: white;
-                border-radius: 17.6px;
-                height: 17.6px;
-                background-color: transparent;
-                border: none;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: bold;
-            }
-            .btn:hover {
-                background-color: white;
-                opacity: 0.70;
-                color: black;
-                border-radius: 17.6px;
-                text-decoration: underline;
-            }
-            .btn2{
-                color: black;
-                height: 10.542px;
-                background-color: white;
-                border: none;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: bold;
-                justify-content: space-between;
-                gap: 3.51px;
-            }
-            .btn2:hover {
-                background-color: transparent;
-                opacity: 0.70;
-                color: white;
-                text-decoration: underline;
-                justify-content: space-between;
-                gap: 3.51px;
-            }
-            #button1 {
-                margin-left: 351.4px;
-            }
-            #button2 {
-                margin-right:17.6px;
-            }
-            .section{
-                background-color: transparent;
-                border-radius: 17.6px; 
-                text-align: left;
-                padding:7.03px;
-            }
-            .topic {
-                color:white;
-                margin-left: 17.6px;
-                font-size: 10.542px
-            }
-            .detail {
-                color:white;
-                margin-left: 17.6px;
-            }
-            #footer {
-                margin-top:35.14px;
-            }
-            .detail2 {
-                color:black;
-                margin-left:24.6px;
-            }
+          .headline {
+            text-align: center;
+            font-size: 1.8rem;
+            color: white;
+          }
+          #logo {
+            width: 22px;
+          }
+          .section {
+            padding: 0.8rem;
+            max-width: 95%;
+          }
+          .topic {
+            font-size: 16px;
+          }
+          .detail {
+            font-size: 14px;
+          }
+          .btn {
+            height: 35px;
+            border-radius: 20px;
+            padding: 0 15px;
+          }
+          .btn2 {
+            height: 20px;
+            border-radius: 10px;
+            padding: 0 8px;
+          }
+          .buttons-container {
+            flex-wrap: wrap;
+            gap: 8px;
+          }
+          #footer {
+            margin-top: 2rem;
+          }
         }
     </style>
 </head>
@@ -224,11 +174,12 @@
         <ul>
             <div>
                 <a href="http://sed-club.github.io/sed/"><button id="logo"style="background-color: transparent; border:none;"><img src="SED_Logo__2.png" style="width: 60px"></button></a>
-                <a href=""><button class="btn" id="button1" style="margin-left: 1000px;">SED Magazine</button></a>
-                <a href="http://sed-club.github.io/research/"><button class="btn">SED Research Team</button></a>
-                <a href="https://forms.gle/96jAWVPwLzkKpZC38"><button class="btn">Contact</button></a>
-                <a href="https://forms.gle/Gyx4p3jAEtJmvpwx7"><button class="btn" id="button2" style=" margin-right:50px;">Join</button></a>
-            <div>
+                <div class="buttons-container">
+                    <a href=""><button class="btn" id="button1" style="margin-left: 1000px;">SED Magazine</button></a>
+                    <a href="http://sed-club.github.io/research/"><button class="btn">SED Research Team</button></a>
+                    <a href="https://forms.gle/96jAWVPwLzkKpZC38"><button class="btn">Contact</button></a>
+                    <a href="https://forms.gle/Gyx4p3jAEtJmvpwx7"><button class="btn" id="button2" style=" margin-right:50px;">Join</button></a>
+                </div>
         </ul>
     </nav>
     <main>
@@ -248,4 +199,5 @@
     </footer>
 </body>
 </html>
+
 
