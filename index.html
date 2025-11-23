@@ -23,7 +23,7 @@
             border: none;
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
-            width:10vw;
+            width:11vw;
             height: 10vh;
         }
         .btn:hover {
@@ -33,6 +33,10 @@
             border-radius: 15%;
             text-decoration: underline;
         }
+        #btn-sec {
+            justify-content:space-between;
+            gap:1vw;
+            margin-left:38vw;
         .btn2 {
             margin-left: 35vw;
             background-color: white;
@@ -56,12 +60,51 @@
         .topic {
             color:white;
             margin-left: 0.5vw;
-            font-size: 2vw;
+            font-size: calc(80/1366*vw);
             font-weight: bold;
         }
         .detail {
             color:white;
             margin-left: calc(50/1366*vw);
+        }
+        #logo2 {
+            width: 5vw;
+        }
+        @media (max-width:466px) {
+            #btn-sec {
+                margin-left: 18vw;
+            }
+            .btn {
+                font-size: 3vw;
+                width: 12vw;
+                justify-content: space-between;
+                gap: 2vw;
+            }
+            .btn:hover {
+                background-color: white;
+                opacity: 0.70;
+                color: black;
+                border-radius: 15%;
+                text-decoration: underline;
+            }
+        }
+        @media (min-width:467px) and (max-width: 646px) {
+            #btn-sec {
+                margin-left: 30vw;
+            }
+            .btn {
+                font-size: 3vw;
+                width: 11vw;
+                justify-content: space-between;
+                gap:2vw;
+            }
+            .btn:hover {
+                background-color: white;
+                opacity: 0.70;
+                color: black;
+                border-radius: 15%;
+                text-decoration: underline;
+            }
         }
     </style>
 </head>
@@ -69,7 +112,7 @@
     <nav style="background-color: transparent;">
         <ul>
             <div>
-                <a href="https://sed-club.github.io/sed/"><button id="logo"style="background-color: transparent; border:none;"><img src="SED_Logo__2.png" style="width: 60px"></button></a>
+                <a href="https://sed-club.github.io/sed/"><button id="logo"style="background-color: transparent; border:none;"><img src="SED_Logo__2.png" id="logo2"></button></a>
                 <a href=""><button class="btn" id="button1" style="margin-left: 46vw;">SED Magazine</button></a>
                 <a href="https://sed-club.github.io/research/"><button class="btn">SED Research Team</button></a>
                 <a href="https://forms.gle/96jAWVPwLzkKpZC38"><button class="btn">Contact</button></a>
@@ -78,7 +121,7 @@
         </ul>
     </nav>
     <main>
-        <h1 style="text-align: center; font-size: 100px;color:white">Curiosite</h1>
+        <h1 style="text-align: center; font-size: calc(200/1366*vw);color:white">Curiosite</h1>
         <div style="background-color: transparent; border-radius: 25vw; text-align: left; padding:5vw">
                 <h2 class="topic">Curiosite</h2>
                 <p class="detail">Curiosite is a monthly science magazine created by SED Magazine Team ,which is lead by Idam Suh and Aayushi Maurya, since August, 2025.</p>
@@ -94,6 +137,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
