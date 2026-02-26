@@ -23,7 +23,7 @@
             border: none;
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
-            width:11vw;
+            width:10vw;
             height: 10vh;
         }
         .btn:hover {
@@ -33,10 +33,35 @@
             border-radius: 15%;
             text-decoration: underline;
         }
-        #btn-sec {
-            justify-content:space-between;
-            gap:1vw;
-            margin-left:38vw;
+        #button1{
+            margin-left: calc(60/1366*vw);
+        }
+        #lg {
+            width:8vw;
+        }
+        .btn-con {
+            display:flex;
+            justify-content: flex-end;
+        }
+        .btn {
+            margin-left:10px;
+        }
+        @media (max-width:814px) {
+            .btn{
+                font-size: 11px;
+            }
+        }
+        @media (max-width:680px) {
+            .btn {
+                font-size: 9px;
+            }
+        }
+        @media (max-width:524px) {
+            .btn{
+                width:5vh;
+                height:5vh;
+            }
+        }
         .btn2 {
             margin-left: 35vw;
             background-color: white;
@@ -47,7 +72,6 @@
             height:6vh;
             width:18vw;
             font-weight:bold;
-            margin-bottom: 10vh;
         }
         .btn2:hover {
             background-color:black;
@@ -55,56 +79,20 @@
             font-family:'Times New Roman', Times, serif;
             align-items: center;
             text-decoration: underline;
-            margin-bottom: 10vh;
         }
         .topic {
             color:white;
             margin-left: 0.5vw;
-            font-size: calc(80/1366*vw);
+            font-size: 2vw;
             font-weight: bold;
         }
         .detail {
             color:white;
             margin-left: calc(50/1366*vw);
         }
-        #logo2 {
-            width: 5vw;
-        }
-        @media (max-width:466px) {
-            #btn-sec {
-                margin-left: 18vw;
-            }
-            .btn {
-                font-size: 3vw;
-                width: 12vw;
-                justify-content: space-between;
-                gap: 2vw;
-            }
-            .btn:hover {
-                background-color: white;
-                opacity: 0.70;
-                color: black;
-                border-radius: 15%;
-                text-decoration: underline;
-            }
-        }
-        @media (min-width:467px) and (max-width: 646px) {
-            #btn-sec {
-                margin-left: 30vw;
-            }
-            .btn {
-                font-size: 3vw;
-                width: 11vw;
-                justify-content: space-between;
-                gap:2vw;
-            }
-            .btn:hover {
-                background-color: white;
-                opacity: 0.70;
-                color: black;
-                border-radius: 15%;
-                text-decoration: underline;
-            }
+        #detail2 {
+            color:white;
+            margin-left:calc(70/1366*vw);
         }
     </style>
 </head>
@@ -112,26 +100,24 @@
     <nav style="background-color: transparent;">
         <ul>
             <div>
-                <a href="https://sed-club.github.io/sed/"><button id="logo"style="background-color: transparent; border:none;"><img src="SED_Logo__2.png" id="logo2"></button></a>
-                <a href=""><button class="btn" id="button1" style="margin-left: 46vw;">Magazine</button></a>
-                <a href="https://sed-club.github.io/research/"><button class="btn">Research Team</button></a>
+                <a href=""><button id="logo"style="background-color: transparent; border:none;"><img src="SED_Logo__2.png" style="width: 60px"></button></a>
+                <a href=""><button class="btn" id="button1" style="margin-left: 46vw;">SED Magazine</button></a>
+                <a href=""><button class="btn">SED Research Team</button></a>
                 <a href="https://forms.gle/96jAWVPwLzkKpZC38"><button class="btn">Contact</button></a>
                 <a href="https://forms.gle/Gyx4p3jAEtJmvpwx7"><button class="btn" id="button2" style=" margin-right:2vw;">Join</button></a>
             <div>
         </ul>
     </nav>
     <main>
-        <h1 style="text-align: center; font-size: calc(200/1366*vw);color:white">Curiosite</h1>
+        <h1 style="text-align: center; font-size: 100px;color:white">Curiosite</h1>
         <div style="background-color: transparent; border-radius: 25vw; text-align: left; padding:5vw">
                 <h2 class="topic">Curiosite</h2>
                 <p class="detail">Curiosite is a monthly science magazine created by SED Magazine Team ,which is lead by Idam Suh and Aayushi Maurya, since August, 2025.</p>
         </div>
         <div style="padding:5vw">
-            <a href="https://online.fliphtml5.com/sed-scienceclub/zqbz/"><button class="btn2">Issue 1(August)</button></a>
+            <a href="https://online.fliphtml5.com/sed-scienceclub/zqbz/"><button class="btn2" id="detail2">Issue 1(August)</button></a>
             <a href="https://online.fliphtml5.com/sed-scienceclub/annq/"><button class="btn2">Issue 2(September)</button></a>
             <a href="https://online.fliphtml5.com/sed-scienceclub/ixwe/"><button class="btn2">Issue 3(October)</button></a>
-            <a href="https://online.fliphtml5.com/sed-scienceclub/bfzc/"><button class="btn2">Issue 4(November)</button></a>
-            <a href="https://online.fliphtml5.com/sed-scienceclub/wjxi/"><button class="btn2">Issue 5(December)</button></a>
         </div>
     </main>
     <footer style="margin-top: 10vh;">
@@ -139,9 +125,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
-
-
